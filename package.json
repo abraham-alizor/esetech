@@ -1,0 +1,50 @@
+{
+	"name": "visitors-directory",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "https://abraham-alizor.github.io/visitors-directory",
+	"dependencies": {
+		"@craco/craco": "^6.4.0",
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^11.1.0",
+		"@testing-library/user-event": "^12.1.10",
+		"gh": "^2.8.9",
+		"gh-pages": "^3.2.3",
+		"pages": "^0.0.16",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-scripts": "4.0.3",
+		"web-vitals": "^1.0.1"
+	},
+	"scripts": {
+		"start": "craco start",
+		"build": "craco build",
+		"test": "craco test",
+		"eject": "react-scripts eject",
+		"predeploy": "yarn build",
+		"deploy": "gh pages -d build"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"autoprefixer": "^9",
+		"postcss": "^7",
+		"tailwindcss": "npm:@tailwindcss/postcss7-compat"
+	}
+}
